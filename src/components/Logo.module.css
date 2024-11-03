@@ -1,0 +1,4 @@
+.logoCtn > h1 {
+  color: var(--text-col);
+  font-family: 'Playfair Display';
+}

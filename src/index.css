@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--text-col);
+  font-family: sans-serif;
+}
+
+*:focus {
+  border: none;
+}
+
+body {
+  background-color: var(--bg-col);
+}
+
+:root {
+  --text-col: #fff;
+  --bg-col: #222f3e;
+  --link-col: #01a3a4;
+  --link-col-hover: #34b5b6;
+  --footer-bg: #041827;
+  --footer-bottom-bg: #020c14;
+}
