@@ -1,0 +1,72 @@
+.services {
+  gap: 4rem;
+  display: flex;
+  padding: 1rem 10rem 11rem;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.services > div {
+  gap: 2rem;
+  width: 100%;
+  display: flex;
+  padding: 2rem;
+  align-items: center;
+  border-radius: 0.9rem;
+  flex-direction: column;
+  background-color: var(--link-col);
+}
+
+.services > div > h1 {
+  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 1.4rem + 0.5vw, 2rem);
+}
+
+.services > div > p > a:link,
+.services > div > p > a:visited {
+  transition: all 0.3s;
+  text-decoration: none;
+  color: var(--contact-me-text);
+  border-bottom: 1px solid transparent;
+}
+
+.services > div > p > a:active,
+.services > div > p > a:hover {
+  border-bottom: 1px solid var(--contact-me-text);
+}
+
+.services > ul {
+  width: 100%;
+  display: grid;
+  list-style: circle;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.services > ul > li {
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.services > ul > li > p {
+  font-size: 1rem;
+  color: var(--link-col);
+  font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
+}
+
+.services > ul > li > div {
+  height: 15rem;
+}
+
+.services > ul > li > div > a > img {
+  width: auto;
+  height: 100%;
+  transition: all 0.3s;
+  border-radius: 0.9rem;
+  box-shadow: 0 0 2px 2px var(--footer-bottom-bg);
+}
+
+.services > ul > li > div > a >img:hover {
+  transform: scale(1.1);
+}

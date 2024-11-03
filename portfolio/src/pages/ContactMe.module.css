@@ -1,0 +1,223 @@
+.contact textarea:focus,
+.contact input:focus {
+  background-color: var(--input-focus-bg-col);
+}
+
+.contact {
+  gap: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 10rem 6rem;
+
+  @media (max-width: 58em) {
+    padding: 2rem;
+  }
+}
+
+.contact > div {
+  width: 100%;
+  display: flex;
+  padding: 2rem;
+  align-items: center;
+  border-radius: 0.9rem;
+  justify-content: center;
+  background-color: var(--link-col);
+
+}
+
+.contact > div > h2 {
+  font-size: 1rem;
+  font-size: clamp(1rem, 0.8rem + 1vw, 2rem);
+}
+
+.contact > form {
+  gap: 2rem;
+  display: flex;
+  padding: 2rem;
+  border-radius: 0.9rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  box-shadow: 0 0 2px 2px var(--text-col);
+
+  @media (max-width: 42em) {
+    width: 30rem;
+  }
+
+  @media (max-width: 33.5em) {
+    width: 20rem;
+  }
+}
+
+.contact > form > div:nth-child(1),
+.contact > form > div:nth-child(2),
+.contact > form > div:nth-child(4),
+.contact > form > div:nth-child(5) {
+  gap: 3rem;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 42em) {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+.contact > form > div:nth-child(3),
+.contact > form > div:nth-child(6),
+.contact > form > div:nth-child(1) > div,
+.contact > form > div:nth-child(2) > div,
+.contact > form > div:nth-child(4) > div,
+.contact > form > div:nth-child(5) > div:first-of-type {
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+.contact > form > div:nth-child(5) > div:last-of-type {
+  gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 42em) {
+    justify-content: flex-start;
+  }
+}
+
+.contact > form > div:nth-child(1) > div > input,
+.contact > form > div:nth-child(2) > div > input,
+.contact > form > div:nth-child(3) > textarea {
+  border: none;
+  font-size: 0.8rem;
+  padding: 0.2rem 1rem;
+  border-radius: 0.9rem;
+  font-size: clamp(0.8rem, 0.76rem + 0.19999999999999996vw, 1rem);
+}
+
+.contact > form > div:nth-child(1) > div > input,
+.contact > form > div:nth-child(2) > div > input,
+.contact > form > div:nth-child(3) > div > select {
+  width: 15rem;
+  height: 2.5rem;
+
+  @media (max-width: 42em) {
+    width: 25rem;
+  }
+
+  @media (max-width: 33.5em) {
+    width: 15rem;
+  }
+}
+
+.contact > form > div:nth-child(3) > textarea {
+  width: 33rem;
+  height: 6rem;
+  padding: 1rem;
+  resize: vertical;
+  max-height: 10rem;
+
+  @media (max-width: 42em) {
+    width: 25rem;
+  }
+
+  @media (max-width: 33.5em) {
+    width: 15rem;
+  }
+}
+
+.contact > form > div:nth-child(4) {
+  width: 100%;
+  display: flex;
+  margin-top: 2rem;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: 33.5em) {
+    gap: 2rem;
+    flex-direction: column;
+  }
+}
+
+.contact > form > div:nth-child(4) > button {
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  background: none;
+  padding: 1rem 2rem;
+  transition: all 0.3s;
+  border-radius: 0.9rem;
+  color: var(--text-col);
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+
+  @media (max-width: 33.5em) {
+    padding: 0.5rem;
+  }
+}
+
+.contact > form > div:nth-child(4) > button:nth-of-type(1) {
+  background-color: var(--link-col);
+}
+
+.contact > form > div:nth-child(4) > button:nth-of-type(1):hover {
+  background-color: var(--link-col-hover);
+}
+
+.contact > form > div:nth-child(4) > button:nth-of-type(2) {
+  background-color: var(--cancel-btn-bg-col);
+}
+
+.contact > form > div:nth-child(4) > button:nth-of-type(2):hover {
+  background-color: var(--cancel-btn-bg-col-hover);
+}
+
+.alert {
+  gap: 0.3rem;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.alert > span > ion-icon {
+  width: 1.4rem;
+  height: 1.4rem;
+  cursor: pointer;
+}
+
+.alert > p {
+  opacity: 0;
+  right: -70%;
+  bottom: 130%;
+  width: 20rem;
+  display: none;
+  position: absolute;
+  align-items: center;
+  border-radius: 20rem;
+  padding: 0.5rem 1rem;
+  justify-content: center;
+  color: var(--footer-bottom-bg);
+  background-color: var(--form-notification-bg-col);
+  animation: showNotification 0.5s ease-in-out forwards;
+}
+
+.alert.phone > p {
+  width: 18rem;
+}
+
+.alert > span:hover ~ p {
+  display: flex;
+}
+
+@keyframes showNotification {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

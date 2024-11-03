@@ -19,13 +19,13 @@ header {
 }
 
 .headerCtn > ul > li > a {
-  font-size: 1.125rem;
+  font-size: 1rem;
   transition: all 0.3s;
   padding: 0.5rem 1rem;
   border-radius: 0.9rem;
   text-decoration: none;
   color: var(--text-col);
-  font-size: clamp(1.125rem, 1.05rem + 0.375vw, 1.5rem);
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
 }
 
 .headerCtn > ul > li > a:hover {

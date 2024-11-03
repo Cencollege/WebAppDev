@@ -1,8 +1,13 @@
+import styles from './Projects.module.css';
+
 function Projects() {
   return (
-    <div>
-      <h1>Projects Page</h1>
-    </div>
+    <section className={styles.projectCtn}>
+      <div>
+        <h1>Projects</h1>
+      </div>
+      <div><p>COMING SOON...</p></div>
+    </section>
   )
 }
 

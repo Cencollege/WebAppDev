@@ -9,7 +9,7 @@
 }
 
 *:focus {
-  border: none;
+  outline: none;
 }
 
 body {
@@ -21,6 +21,11 @@ body {
   --bg-col: #222f3e;
   --link-col: #01a3a4;
   --link-col-hover: #34b5b6;
+  --contact-me-text: #2C3A47;
   --footer-bg: #041827;
   --footer-bottom-bg: #020c14;
+  --cancel-btn-bg-col: #e74c3c;
+  --input-focus-bg-col: #dfe4ea;
+  --cancel-btn-bg-col-hover: #e95e50;
+  --form-notification-bg-col: #dcdde1;
 }
