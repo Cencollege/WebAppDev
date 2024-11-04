@@ -6,7 +6,7 @@ function Projects() {
       <div>
         <h1>Projects</h1>
       </div>
-      <div><p>COMING SOON...</p></div>
+      <div><p>COMING SOON....</p></div>
     </section>
   )
 }
